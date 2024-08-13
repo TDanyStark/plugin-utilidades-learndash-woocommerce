@@ -1,0 +1,93 @@
+.learndash-all-courses, .learndash-enrolled-courses{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: var(--size-l);
+  align-items: stretch;
+}
+
+
+.learndash-all-courses .course-item, .learndash-enrolled-courses .course-item {
+  max-width: 100%;
+  border-radius: var(--size-m);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+}
+
+.course-item-link{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.learndash-all-courses .course-image img, .learndash-enrolled-courses .course-image img  {
+  max-width: 100%;
+  height: auto;
+}
+
+.learndash-all-courses .info-container, .learndash-enrolled-courses .course-title {
+  padding: var(--size-m);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.learndash-all-courses .view-link{
+  text-align: right;
+  padding-top: var(--size-m);
+}
+
+.view-link span{
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: var(--bricks-color-cxkzia);
+  color: white;
+  border-radius: var(--size-m);
+  cursor: pointer;
+}
+
+
+.alert-daniel {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.daniel-custom-course-button{
+	text-align: center;
+}
+
+.daniel-custom-course-button a{
+	display:inline-block;
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+  background-color: var(--bricks-color-fpxrdo);
+	color: var(--bricks-color-4edc58);
+	padding: 8px 20px;
+	border-radius: 25px;
+}
+
+.daniel-custom-course-price .price_text_shortcode {
+  font-size: var(--size-xl);
+  text-wrap: nowrap;
+  font-weight: 700;
+  color: var(--bricks-color-cxkzia);
+  text-align: center;
+}
+
+.daniel-custom-course-button-login{
+	margin-top: 15px;
+}
+
+.daniel-custom-course-button-login p{
+	margin-bottom: 10px;
+}
+
+.daniel-custom-course-button-login .btn-secondary{
+  border: 1px solid var(--bricks-color-fpxrdo);
+  background-color: transparent;
+  color: var(--bricks-color-fpxrdo);
+}
